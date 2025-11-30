@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Kod JavaScript </h2>
+        <pre>
+const imie = "Dawid";
+
+let x1_ula = parseFloat(prompt("podaj x1"));
+let x2_ula = parseFloat(prompt("podaj x2"));
+
+document.write(`x1=${x1_ula}&nbsp&nbsp&nbsp&nbsp&nbspx2=${x2_ula}<br>`);
+document.write(`x1=${x1_ula}&nbsp&nbsp&nbsp&nbsp&nbspx1=${((x1_ula * Math.PI) / 180).toFixed(2)}<br>`)
+
+let y1 = 3 * Math.pow(x1_ula, imie.length / (imie.length + 2));
+            
+let rad_x1_ula = (x1_ula * Math.PI) / 180;
+
+let y2 = 2 * Math.cos(rad_x1_ula) + 3 * Math.sin(rad_x1_ula);
+let y3 = Math.pow(Math.pow(x1_ula, 5) + (2 * Math.pow(x2_ula, 4)), 1/3) * Math.abs(x1_ula - x2_ula);
+
+console.log(`y1=${y1.toFixed(2)}`);
+console.log(`y2=${y2.toFixed(2)}`);
+console.log(`y3=${y3.toFixed(2)}`);
+        </pre>
+    </body>
+</html>

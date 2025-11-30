@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Pole_ulanicki(a_ula, b_ula) {
+                let w = parseFloat(a_ula) * parseFloat(b_ula);
+                document.getElementsByName("pole")[0].value = `${w.toFixed(2).toString()} cm`;
+                document.getElementsByName("wyprowadz_pole_ula")[0].innerHTML = `Pole = ${w.toFixed(2).toString()} cm`;
+            }
+
+            function obwod_ulanicki(a_ula, b_ula) {
+                let w = (parseFloat(a_ula)*2) + (parseFloat(b_ula)*2);
+                document.getElementsByName("obw")[0].value = `${w.toFixed(2).toString()} cm^2`;
+                document.getElementsByName("wyprowadz_obwod_ula")[0].innerHTML = `Obwód = ${w.toFixed(2).toString()} cm^2`;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formularz" action="..." onsubmit="Pole_ulanicki(this.a_dana_ula.value, this.b_dana_ula.value); obwod_ulanicki(this.a_dana_ula.value, this.b_dana_ula.value); return false;">   
+            Podaj A= 
+                <input  size="6"  name="a_dana_ula"> 
+            Podaj B= 
+                <input  size="6"  name="b_dana_ula"> 
+                            <br>   <br> 
+                <input  TYPE="submit"  Value="oblicz" > 
+                            <br>   <br> 
+            Pole= 
+                <input  size="6"  name="pole"> 
+            Obwód= 
+                <input  size="6"  name="obw"> 
+        </form> 
+        <br>
+        <table>
+            <tr name="wyprowadz_pole_ula"></tr>
+            <tr name="wyprowadz_obwod_ula"></tr>
+        </table><br>
+
+    </body>
+</html>

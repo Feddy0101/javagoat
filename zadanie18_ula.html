@@ -1,0 +1,43 @@
+<!DOCTYPE html>   
+<html>
+    <head>    
+        <title> Użycie fukcji </title>    
+        <meta charset="utf-8">   
+    </head>  
+    <body> 
+        <div style="color:navy;font-size:50px;"> 
+            <script language="JavaScript"> 
+                var a = parseFloat(prompt("a=","")); 
+                var b = parseFloat(prompt("b=","")); 
+
+                function suma_ula(a, b) { 
+                    return a + b; 
+                } 
+
+                function odejmowanie_ula(a, b) {
+                    return a - b;
+                }
+
+                function mnozenie_ula(a, b) {
+                    return a * b;
+                }
+
+                function do_kwadratu_ula(a, b) {
+                    return [a*a, b*b];
+                }
+
+                function reszta_z_dzielenia_a_przez_b_ula(a, b) {
+                    return a % b;
+                }
+
+                console.log(do_kwadratu_ula(a,b));
+
+                document.write("suma=" + suma_ula(a,b)+"<br>"); 
+                document.write("odejmowanie=" + odejmowanie_ula(a,b)+"<br>");
+                document.write("mnozenie=" + mnozenie_ula(a,b) + "<br>");
+                document.write("kwadrat=" + do_kwadratu_ula(a,b)[0] + "; " + do_kwadratu_ula(a,b)[1] + "<br>");
+                document.write("reszta=" + reszta_z_dzielenia_a_przez_b_ula(a,b) + "<br>");
+            </script> 
+        </div> 
+    </body> 
+</html> 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;script defer&gt;
+            let xa_ula, ya_ula;
+            let xb_ula, yb_ula;
+            let xc_ula, yc_ula;
+
+            function AB_ula() {
+                return Math.sqrt(Math.pow(xa_ula - xb_ula, 2) + Math.pow(ya_ula - yb_ula, 2));
+            }
+
+            function BC_ula() {
+                return Math.sqrt(Math.pow(xb_ula - xc_ula, 2) + Math.pow(yb_ula - yc_ula, 2));
+            }
+
+            function AC_ula() {
+                return Math.sqrt(Math.pow(xa_ula - xc_ula, 2) + Math.pow(ya_ula - yc_ula, 2));
+            }
+
+            function oblicz() {
+                xa_ula = parseFloat(document.getElementById('input_XA').value);
+                ya_ula = parseFloat(document.getElementById('input_YA').value);
+
+                xb_ula = parseFloat(document.getElementById('input_XB').value);
+                yb_ula = parseFloat(document.getElementById('input_YB').value);
+
+                xc_ula = parseFloat(document.getElementById('input_XC').value);
+                yc_ula = parseFloat(document.getElementById('input_YC').value);
+
+                document.getElementById("res_AB").innerHTML = `AB: ${AB_ula()}`;
+                document.getElementById("res_AC").innerHTML = `AC: ${AC_ula()}`;
+                document.getElementById("res_BC").innerHTML = `BC: ${BC_ula()}`;
+
+                console.log(xa_ula);
+                console.log(ya_ula);
+
+            }
+
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;A:&lt;/p&gt;
+        &lt;span&gt;X: &lt;/span&gt;&lt;input type="text" id="input_XA"&gt;&lt;br&gt;
+        &lt;span&gt;Y: &lt;/span&gt;&lt;input type="text" id="input_YA"&gt;&lt;br&gt;
+        
+        &lt;p&gt;B:&lt;/p&gt;
+        &lt;span&gt;X: &lt;/span&gt;&lt;input type="text" id="input_XB"&gt;&lt;br&gt;
+        &lt;span&gt;Y: &lt;/span&gt;&lt;input type="text" id="input_YB"&gt;&lt;br&gt;
+
+        &lt;p&gt;C:&lt;/p&gt;
+        &lt;span&gt;X: &lt;/span&gt;&lt;input type="text" id="input_XC"&gt;&lt;br&gt;
+        &lt;span&gt;Y: &lt;/span&gt;&lt;input type="text" id="input_YC"&gt;&lt;br&gt;
+
+        &lt;p id="res_AB"&gt;&lt;/p&gt;
+        &lt;p id="res_BC"&gt;&lt;/p&gt;
+        &lt;p id="res_AC"&gt;&lt;/p&gt;
+
+        &lt;br&gt;&lt;br&gt;&lt;button onclick="oblicz()"&gt;Oblicz&lt;/button&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>
