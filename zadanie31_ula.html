@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            let router = {
+                rodzaj: "5G",
+                kolor: "biały",
+                router_pokaz_Ulanicki: function() {
+                    document.write(`rodzaj: ${this.rodzaj}<br>Kolor: ${this.kolor}`);
+                }
+            }
+
+            router.router_pokaz_Ulanicki(); 
+            router.firma = "UPC"; 
+            router.wypisz = function() {alert('Firma: ' + this.firma)} 
+            router.wypisz(); 
+        </script>
+    </head>
+    <body>
+        <br><br><br>
+        Programowanie obiektowe. <br> 
+        Obiekt  to  router<br> 
+        Pola:<br> 
+        rodzaj<br> 
+        Kolor<br> 
+        metoda:  router_pokaz_Ulanicki<br> 
+        nowe pole to firma <br> 
+        nowa metoda to wypisz();<br>
+    </body>
+</html>

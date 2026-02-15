@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <script type="text/javascript"> 
+            function Router(kolor_k, Rodzaj_k, rodzaj_k)
+            { 
+                this.kolor = kolor_k; 
+                this.Rodzaj = Rodzaj_k;
+                this.rodzaj = rodzaj_k;   
+            }
+            
+            Router.prototype.wypisz = function() { 
+                alert(" kolor: " + this.kolor + ". Rodzaj: " + this.Rodzaj + ". Firma: " + this.rodzaj); 
+            }; 
+            
+            var Router1 = new Router("biały", "5G", "UPC");
+            var Router2 = new Router("czarny", "4G", "UPS"); 
+            Router1.wypisz();
+            Router2.wypisz(); 
+            document.write("dostęp do właściwości"+"<br>"); 
+            document.write("pierwszy Router" + "   " + Router1.kolor + "   " + Router1.Rodzaj + "   " + Router1.rodzaj); 
+        </script> 
+    </head> 
+    <body> 
+        <br> 
+        programowanie obiektowe   
+    </body> 
+</html>
