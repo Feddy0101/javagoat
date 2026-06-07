@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div style="color:red; font-size: 50px;"&gt;
+            &lt;script&gt;
+                do {
+                    var a_ula = parseFloat(prompt("bok a = "));
+                    var b_ula = parseFloat(prompt("bok b = "));
+                    var c_ula = parseFloat(prompt("bok c = "));
+                    document.write("sprawdzam warunki dla trójkąta dla wczytanych danych&lt;br&gt;");
+                }
+                while (!((a_ula &gt; 0) &amp;&amp; (b_ula &gt; 0) &amp;&amp; (c_ula &gt; 0) &amp;&amp; (a_ula + b_ula &gt; c_ula) &amp;&amp; (a_ula + c_ula &gt; b_ula) &amp;&amp; (c_ula + b_ula &gt; a_ula)));
+
+                document.write("wyrok: trójkąt się zamyka oraz boki są dodatnie");
+            &lt;/script&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>

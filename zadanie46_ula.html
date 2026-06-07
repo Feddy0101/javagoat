@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color:red;font-size:42px">
+            <script>
+                
+                let imie = "Dawid";
+                let nazwisko = "Ulanicki";
+                let ile_razy_wyswietlic_ula = 10;
+
+                document.write(`ilość wykonania pętli = ${ile_razy_wyswietlic_ula}<br>`);
+                document.write(`wielkość liter = 42px<br><br>`);
+
+                for (i_u = 0; i_u < ile_razy_wyswietlic_ula; i_u++) {
+                    if (i_u % 2 == 0) {
+                        document.write(imie + "<br>");
+                    }
+                    else {
+                        document.write(nazwisko + "<br>");
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

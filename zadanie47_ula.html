@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #nazwisko {
+                color: blue;
+                font-size: 42px;
+            }
+
+            #imie {
+                color: green;
+                font-size: 42px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            
+            let l_ula = parseInt(prompt("Liczba="));
+
+            if (l_ula % 2 == 0) {
+                // Nazwisko
+                for (let u = 0; u < 10; u++) {
+                    document.write("<span id=\"nazwisko\">Ulanicki</span><br>")
+                }
+            }
+            else {
+                // Imie
+                for (let u = 0; u < 10; u++) {
+                    document.write("<span id=\"imie\">Dawid</span><br>")
+                }
+            }
+
+        </script>
+    </body>
+</html>

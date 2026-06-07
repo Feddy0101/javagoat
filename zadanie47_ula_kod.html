@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;style&gt;
+            #nazwisko {
+                color: blue;
+                font-size: 42px;
+            }
+
+            #imie {
+                color: green;
+                font-size: 42px;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            
+            let l_ula = parseInt(prompt("Liczba="));
+
+            if (l_ula % 2 == 0) {
+                // Nazwisko
+                for (let u = 0; u &lt; 10; u++) {
+                    document.write("&lt;span id=\\"nazwisko\\"&gt;Ulanicki&lt;/span&gt;&lt;br&gt;")
+                }
+            }
+            else {
+                // Imie
+                for (let u = 0; u &lt; 10; u++) {
+                    document.write("&lt;span id=\\"imie\\"&gt;Dawid&lt;/span&gt;&lt;br&gt;")
+                }
+            }
+
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            let a_ula = 6;
+            let b_ula = 21;
+
+            for (let i_ula = 0; i_ula &lt; b_ula; i_ula++) {
+                document.write("*");
+            }
+            document.write("&lt;br&gt;");
+            
+            for (let i_ula = 0; i_ula &lt; a_ula - 2; i_ula++) {
+                document.write("*");
+                for (let x_ula = 0; x_ula &lt; b_ula - 2; x_ula++) {
+                    document.write("&amp;nbsp ");
+                }
+                document.write("*&lt;br&gt;");
+            }
+
+            for (let i_ula = 0; i_ula &lt; b_ula; i_ula++) {
+                document.write("*");
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>

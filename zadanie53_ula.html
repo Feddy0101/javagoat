@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+    <head>  
+    <meta charset="utf-8"> 
+        <script language="JavaScript"> 
+
+            let a_ula = parseInt(prompt("ile razy powtórzyć="));
+            let inicjaly_ula = prompt("podaj twoje inicjały=");
+
+            for (let i_ula = 1; i_ula <= a_ula; i_ula++) { 
+                
+                for (let k_ula = 1; k_ula <= i_ula; k_ula++) { 
+                    document.write("&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp");     
+                } 
+                
+                document.write(`${i_ula}_${inicjaly_ula}_${i_ula}<br>`); 
+            } 
+        </script> 
+    </head>
+</html> 

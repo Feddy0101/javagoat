@@ -6,8 +6,11 @@
     <body>
         <div style="color:red;font-size:50px">
             <script>
-                for (i_u = 1; i_u <= 10; i_u++) {
-                    document.write(`wyświetlam ${i_u} raz Ulanicki<br>`)
+
+                let koniec_petli_ula = parseInt(prompt("podaj koniec pętli"));
+
+                for (i_u = 2; i_u <= koniec_petli_ula; i_u+=2) {
+                    document.write(`${i_u}<br>`)
                 }
             </script>
         </div>

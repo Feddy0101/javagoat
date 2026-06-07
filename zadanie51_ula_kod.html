@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            let n_ula = -1;
+
+            do {
+                n_ula = parseFloat(prompt("Podaj silnie"));
+            } while (n_ula &lt; 0);
+
+            let silnia_ula = 1;
+
+            if (n_ula != 0) {
+                for (let i = 1; i &lt;= n_ula; i++) {
+                    silnia_ula *= i;
+                }
+            }
+
+            document.write(`${n_ula}! = ${silnia_ula}`);
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </body>
+</html>
