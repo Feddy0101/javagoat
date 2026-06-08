@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie 82</title>
+    <style>
+        .nazwisko {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .wyjasnienia {
+            color: green;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+    </style>
+    <script language="JavaScript">
+        function pushbutton() {
+            alert("Cześć!");
+        }
+    </script>
+</head>
+<body>
+    <script language="JavaScript">
+        document.write('<h2 class="nazwisko">Ulanicki</h2>');
+
+        document.write('<div class="wyjasnienia">');
+        document.write('dzis = new Date() → wpis co oznacza ten zapis<br>');
+        document.write('dzis = dzis.getHours() → wpis co oznacza ten zapis<br>');
+        document.write('dzis = dzis.getMinutes() → wpis co oznacza ten zapis<br>');
+        document.write('dzis = dzis.getMonth()+1 → wpis co oznacza ten zapis<br>');
+        document.write('dzis = dzis.getDate() → wpis co oznacza ten zapis<br>');
+        document.write('dzis = dzis.getFullYear() → wpis co oznacza ten zapis');
+        document.write('</div><br>');
+    </script>
+
+    Ostatnio zmodyfikowany
+    <script language="JavaScript">
+        document.write(document.lastModified + "<br>");
+    </script>
+
+    <form>
+        <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+    </form>
+
+    <script language="JavaScript">
+        dzis = new Date()
+        
+        var DD = dzis.getDate();
+        var MM = dzis.getMonth() + 1;
+        var YY = dzis.getFullYear();
+
+        document.write("Aktualny czas: " + dzis.getHours() + ":" + dzis.getMinutes() + "<br>");
+        
+        document.write("Aktualna data: " +
+            '<span style="color:red; font-weight:bold;">' + DD + '</span>' + "." +
+            '<span style="color:green; font-weight:bold;">' + MM + '</span>' + "." +
+            '<span style="color:blue; font-weight:bold;">' + YY + '</span>');
+    </script>
+
+</body>
+</html>
